@@ -1,12 +1,13 @@
 {
   "name": "testinstall",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env NODE_ENV=production babel --copy-files --out-dir dist --ignore *.spec.js src"
+    "build": "cross-env NODE_ENV=production babel --copy-files --out-dir dist --ignore *.spec.js src",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "",
   "license": "ISC",
@@ -19,8 +20,12 @@
     "cross-env": "^3.1.4",
     "cz-conventional-changelog": "^2.0.0",
     "semantic-release": "^6.3.2"
-  }
+  },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pcious/testinstall.git"
   }
 }
