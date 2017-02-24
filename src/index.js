@@ -1,3 +1,3 @@
-exports default hello = () => {
+export const hello = () => {
   console.log('Hellow world');
 };
