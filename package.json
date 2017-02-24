@@ -2,7 +2,7 @@
   "name": "pcious-testinstall",
   "version": "0.0.0-development",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "commit": "git-cz",
     "test": "echo \"Error: no test specified\"",
@@ -26,6 +26,10 @@
       "path": "node_modules/cz-conventional-changelog"
     }
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/pcious/testinstall.git"

@@ -4,6 +4,9 @@ cache:
     - node_modules
 notifications:
   email: false
+script: 
+  - npm run test
+  - npm run build
 node_js:
   - '6'
 before_script:
